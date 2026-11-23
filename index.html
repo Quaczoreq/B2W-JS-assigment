@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B2WassigmentJS</title>
+    <link rel="stylesheet" href="assets/CSS/global.css">
+</head>
+<body>
+<!-- Header Section -->
+    <div border="3" style="border: 2px solid #143d1f;">
+        <h1 style="color:#143d1f; text-align:center;">B2W Assignment JS / Unit 3 / November 2026</h1>
+        <h2 style="color:#143d1f; text-align:center;">Katarzyna Opozda</h2>
+    </div> 
+<!-- task 1 section Confirm BOX -->
+<section>
+        <div>
+            <h2 style="color:#ffffc4; text-align:center;">TASK 1</h2>
+            <h3>Confirm BOX</h3>
+                <p>Click the button to check your age:</p>
+                    <button onclick="Age()">Click me</button>
+                    <p id="demo"></p>
+        </div>
+</section>
+
+<!-- task 2 section Hide/show/hide button  -->
+<section>
+        <div>
+            <h2 style="color:#ffffc4; text-align:center;">TASK 2</h2>
+            <h3>Hide /show / hide </h3>
+                <p>Click the button to hide or show the "hide me" button:</p>
+                    <button onclick="hide()">click me</button>
+                    <button id="hideme" onclick="hide()">hide me </button>
+        </div>
+</section>
+
+<section>
+        <div>
+            <h2 style="color:#ffffc4; text-align:center;">TASK 2</h2>
+            <h3>Move button</h3>
+                <p>Click the button to move the "Move me" button:</p>
+                    <button id="moveme" onclick="move()">Move me</button>
+<!-- if (button.style.left === "100px") {
+    button.style.left = "0px";
+} else {
+    button.style.left = "100px";
+}-->    
+        </div>
+</section>
+
+<!-- Task 3 section Move button -->
+<script>
+function move() {
+    let button = document.getElementById("moveme");
+    button.style.position = "relative";
+    button.style.left = button.style.left === "100px" ? "0px" : "100px";
+}
+</script>
+
+<script src="assets/JS/Task1.js"></script>
+</body>
+</html>
