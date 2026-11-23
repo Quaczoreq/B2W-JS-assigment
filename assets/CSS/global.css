@@ -20,6 +20,28 @@ div {
     border-radius: 12px;
     
 }
+
+.task-section {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.task-section > div {
+    margin-bottom: 0;
+}
+
+.full-width-card {
+    grid-column: 1 / -1;
+}
+
+@media (max-width: 600px) {
+    .task-section {
+        grid-template-columns: 1fr;
+    }
+}
+
 button {
     padding: 0.5rem 1rem;
     background-color: #3f805d;
