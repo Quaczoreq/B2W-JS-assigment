@@ -5,53 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>B2WassigmentJS</title>
     <link rel="stylesheet" href="assets/CSS/global.css">
+    <link rel="stylesheet" href="assets/CSS/task-heading.css">
+    <link rel="stylesheet" href="assets/CSS/screenshot-accordion.css">
 </head>
 <body>
+<main class="page-content">
 <!-- Header Section -->
     <div border="3" style="border: 2px solid #143d1f;">
         <h1 style="color:#143d1f; text-align:center;">B2W Assignment JS / Unit 3 / November 2026</h1>
         <h2 style="color:#143d1f; text-align:center;">Katarzyna Opozda</h2>
     </div> 
-<!-- task 1 section Confirm BOX -->
-<section class="task-section">
-        <div>
-            <h2 style="color:#ffffc4; text-align:center;">TASK 1</h2>
+
+<!-- TASK 1 section Confirm BOX -->
+<details class="task-accordion">
+        <summary class="task-heading">
+            <h2>TASK 1</h2>
             <h3>Confirm BOX</h3>
+        </summary>
+    <section class="task-section">
+        <div class="task-card">
                 <p>Click the button to check your age:</p>
                     <button onclick="Age()">Click me</button>
                     <p id="demo"></p>
         </div>
         <div>
             <h3>Annotations</h3>
-            <p>this is where i will explain all the code and its functionality</p>
+            <p style="color: white;">this is where i will explain all the code and its functionality</p>
         </div>
         <div class="full-width-card">
-            <h3>Screenshot of the code</h3>
+            <details class="screenshot-accordion">
+                <summary>Screenshot of the code</summary>
+                <p>Add a screenshot of the code here.</p>
+            </details>
         </div>
-</section>
+    </section>
+</details>
 
-<!-- task 2 section Hide/show/hide button  -->
-<section class="task-section">
-        <div>
-            <h2 style="color:#ffffc4; text-align:center;">TASK 2</h2>
-            <h3>Hide /show / hide </h3>
+<!-- TASK 2 section Hide/show/hide button  -->
+<details class="task-accordion">
+        <summary class="task-heading">
+            <h2>TASK 2</h2>
+            <h3>Hide /show / hide</h3>
+        </summary>
+    <section class="task-section">
+        <div class="task-card">
                 <p>Click the button to hide or show the "hide me" button:</p>
                     <button onclick="hide()">click me</button>
                     <button id="hideme" onclick="hide()">hide me </button>
         </div>
         <div>
             <h3>Annotations</h3>
-            <p>this is where i will explain all the code and its functionality</p>
+            <p style="color: white;">this is where i will explain all the code and its functionality</p>
         </div>
         <div class="full-width-card">
-            <h3>Screenshot of the code</h3>
+            <details class="screenshot-accordion">
+                <summary>Screenshot of the code</summary>
+                <p>Add a screenshot of the code here.</p>
+            </details>
         </div>
-</section>
+    </section>
+</details>
 
-<section class="task-section">
-        <div>
-            <h2 style="color:#ffffc4; text-align:center;">TASK 3</h2>
+<!-- TASK 3 section Move button -->
+<details class="task-accordion">
+        <summary class="task-heading">
+            <h2>TASK 3</h2>
             <h3>Move button</h3>
+        </summary>
+    <section class="task-section">
+        <div class="task-card">
                 <p>Click the button to move the "Move me" button:</p>
                     <button id="moveme" onclick="move()">Move me</button>
 <!-- if (button.style.left === "100px") {
@@ -62,21 +84,124 @@
         </div>
         <div>
             <h3>Annotations</h3>
-            <p>this is where i will explain all the code and its functionality</p>
+            <p style="color: white;">this is where i will explain all the code and its functionality</p>
         </div>
         <div class="full-width-card">
-            <h3>Screenshot of the code</h3>
+            <details class="screenshot-accordion">
+                <summary>Screenshot of the code</summary>
+                <p>Add a screenshot of the code here.</p>
+            </details>
         </div>
-</section>
+    </section>
+</details>
 
-<!-- Task 3 section Move button -->
-<script>
-function move() {
-    let button = document.getElementById("moveme");
-    button.style.position = "relative";
-    button.style.left = button.style.left === "100px" ? "0px" : "100px";
-}
-</script>
+<!-- TASK 4 section Hide/show/hide button  -->
+<details class="task-accordion">
+        <summary class="task-heading">
+            <h2>TASK 4</h2>
+            <h3>Change background color in 3 seconds</h3>
+        </summary>
+    <section class="task-section">
+        <div class="task-card">
+                <p>Click the button to change the background color:</p>
+                <p>PLEASE BE PATIENT:The background color will change after 3 seconds.</p>
+                    <button class="color-choice yellow" onclick="changeBG('yellow')" aria-label="Choose yellow">Yellow</button>
+                    <button class="color-choice blue" onclick="changeBG('lightblue')" aria-label="Choose blue">Blue</button>
+                    <button class="color-choice pink" onclick="changeBG('lightpink')" aria-label="Choose pink">Pink</button>
+                    <button class="color-choice purple" onclick="changeBG('plum')" aria-label="Choose purple">Plum</button>
+                    <button class="color-choice green" onclick="changeBG('lightgreen')" aria-label="Choose green">Green</button>
+                    <button class="color-choice red" onclick="changeBG('lightcoral')" aria-label="Choose red">Red</button>
+                    <button class="color-choice orange" onclick="changeBG('orange')" aria-label="Choose orange">Orange</button>
+                    <button style="border:2px solid black; background-color: rgb(143, 43, 43);" onclick="changeBG('white')">Reset</button>
+
+<!-- The changeBG function will be defined in the JavaScript file to change the background color after the specified time -->
+        </div>
+        <div>
+            <h3>Annotations</h3>
+            <p style="color: white;">this is where i will explain all the code and its functionality</p>
+        </div>
+        <div class="full-width-card">
+            <details class="screenshot-accordion">
+                <summary>Screenshot of the code</summary>
+                <p>Add a screenshot of the code here.</p>
+            </details>
+        </div>
+    </section>
+</details>
+
+<!-- TASK 5 section Date -->
+<details class="task-accordion">
+        <summary class="task-heading">
+            <h2>TASK 5</h2>
+            <h3>new Date()</h3>
+        </summary>
+    <section class="task-section">
+        <div class="task-card">
+            <p>Add your task here.</p>
+        </div>
+        <div>
+            <h3>Annotations</h3>
+            <p style="color: white;">this is where i will explain all the code and its functionality</p>
+        </div>
+        <div class="full-width-card">
+            <details class="screenshot-accordion">
+                <summary>Screenshot of the code</summary>
+                <p>Add a screenshot of the code here.</p>
+            </details>
+        </div>
+    </section>
+</details>
+
+<!-- TASK 6 section Counter and calculator -->
+<details class="task-accordion">
+        <summary class="task-heading">
+            <h2>TASK 6</h2>
+            <h3>Counter / calculator</h3>
+        </summary>
+    <section class="task-section">
+        <div class="task-card">
+            <p>Add your task here.</p>
+        </div>
+        <div>
+            <h3>Annotations</h3>
+            <p style="color: white;">this is where i will explain all the code and its functionality</p>
+        </div>
+        <div class="full-width-card">
+            <details class="screenshot-accordion">
+                <summary>Screenshot of the code</summary>
+                <p>Add a screenshot of the code here.</p>
+            </details>
+        </div>
+    </section>
+</details>
+
+<!-- TASK 7 section Lightbulb -->
+<details class="task-accordion">
+        <summary class="task-heading">
+            <h2>TASK 7</h2>
+            <h3>The lightbulb: onload(), onmouseover(), onmouseout()</h3>
+        </summary>
+    <section class="task-section">
+        <div class="task-card">
+            <p>Add your task here.</p>
+        </div>
+        <div>
+            <h3>Annotations</h3>
+            <p style="color: white;">this is where i will explain all the code and its functionality</p>
+        </div>
+        <div class="full-width-card">
+            <details class="screenshot-accordion">
+                <summary>Screenshot of the code</summary>
+                <p>Add a screenshot of the code here.</p>
+            </details>
+        </div>
+    </section>
+</details>
+
+</main>
+<footer class="site-footer">
+    <a href="https://backtoworkuk.com/" target="_blank" rel="noopener noreferrer"><img src="assets/images/b2wlogo.JPG" alt="Back to Work" ></a>
+</footer>
 
 <script src="assets/JS/Task1.js"></script>
 </body>

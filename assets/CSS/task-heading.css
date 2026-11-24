@@ -1,0 +1,55 @@
+.task-accordion {
+    margin-bottom: 1rem;
+}
+
+.task-accordion > .task-section {
+    margin: 1rem 0 0;
+}
+
+.task-heading {
+    display: block;
+    position: relative;
+    padding: 1rem 3rem;
+    background-color: #285b40;
+    border: none;
+    border-radius: 12px;
+    color: #ffffc4;
+    cursor: pointer;
+    text-align: center;
+}
+
+.task-heading::-webkit-details-marker {
+    display: none;
+}
+
+.task-heading::after {
+    content: "+";
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+}
+
+.task-accordion[open] > .task-heading::after {
+    content: "-";
+}
+
+.task-heading:focus-visible {
+    outline: 2px solid #143d1f;
+    outline-offset: 4px;
+}
+
+.task-heading h2 {
+    margin: 0 0 0.5rem;
+}
+
+.task-heading h3 {
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: normal;
+}
+
+.task-card {
+    background-color: #d9e9c9;
+}
