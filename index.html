@@ -9,11 +9,15 @@
     <link rel="stylesheet" href="assets/CSS/screenshot-accordion.css">
 </head>
 <body>
+<header class="site-header">
+    <a href="https://backtoworkuk.com/" target="_blank" rel="noopener noreferrer"><img src="assets/images/b2wlogo.JPG" alt="Back to Work" ></a>
+</header>
+<p class="course-banner">L3 Software developer course</p>
 <main class="page-content">
 <!-- Header Section -->
     <div border="3" style="border: 2px solid #143d1f;">
         <h1 style="color:#143d1f; text-align:center;">B2W Assignment JS / Unit 3 / November 2026</h1>
-        <h2 style="color:#143d1f; text-align:center;">Katarzyna Opozda</h2>
+        <h2 style="text-align:center;"><a class="profile-link" href="https://www.linkedin.com/in/katarzyna-opozda" target="_blank" rel="noopener noreferrer">Katarzyna Opozda</a></h2>
     </div> 
 
 <!-- TASK 1 section Confirm BOX -->
@@ -183,7 +187,10 @@
         </summary>
     <section class="task-section">
         <div class="task-card">
-            <p>Add your task here.</p>
+            <p>Move your mouse over the bulb or focus it with Tab to turn it on. Move away or change focus to turn it off.</p>
+            <img id="lightbulb" class="bulb-image" src="assets/images/off.png" alt="Lightbulb off"
+                 tabindex="0" onmouseover="setBulb(true)" onmouseout="setBulb(false)"
+                 onfocus="setBulb(true)" onblur="setBulb(false)">
         </div>
         <div>
             <h3>Annotations</h3>
@@ -199,9 +206,6 @@
 </details>
 
 </main>
-<footer class="site-footer">
-    <a href="https://backtoworkuk.com/" target="_blank" rel="noopener noreferrer"><img src="assets/images/b2wlogo.JPG" alt="Back to Work" ></a>
-</footer>
 
 <script src="assets/JS/Task1.js"></script>
 </body>

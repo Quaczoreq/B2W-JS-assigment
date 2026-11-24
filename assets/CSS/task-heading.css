@@ -53,3 +53,10 @@
 .task-card {
     background-color: #d9e9c9;
 }
+
+.bulb-image {
+    display: block;
+    width: 160px;
+    max-width: 100%;
+    height: auto;
+}

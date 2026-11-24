@@ -29,3 +29,9 @@ function changeBG(color) {
     }, 3000); 
 
 }
+
+function setBulb(isOn) {
+    let bulb = document.getElementById("lightbulb");
+    bulb.src = isOn ? "assets/images/on.png" : "assets/images/off.png";
+    bulb.alt = isOn ? "Lightbulb on" : "Lightbulb off";
+}

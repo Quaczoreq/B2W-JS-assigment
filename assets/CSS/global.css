@@ -48,13 +48,13 @@ border-color: rgb(39, 51, 45);
     grid-column: 1 / -1;
 }
 
-.site-footer {
+.site-header {
     padding: 1rem;
     background-color: #0d302a;
     text-align: center;
 }
 
-.site-footer img {
+.site-header img {
     display: block;
     max-width: 100%;
     height: auto;
@@ -62,18 +62,35 @@ border-color: rgb(39, 51, 45);
     opacity: 0.8;
 }
 
-button {
+.course-banner {
+    margin: 0;
+    padding: 0.75rem 1rem;
+    background-color: #285b40;
+    color: #ffffc4;
+    font-size: 1rem;
+    text-align: center;
+}
+
+button,
+.profile-link {
     padding: 0.5rem 1rem;
     margin: 0.5rem 0;
-    background-color: #3f805d;
+    background-color: #000000;
     color: #fbfcca;
     border: none;
     border-radius: 8px;
     cursor: pointer;
 }
-button:hover {
+button:hover,
+.profile-link:hover {
     background-color: rgba(36, 54, 45, 0.8);
     transition: background-color 0.7s ease;
+}
+.profile-link {
+    display: inline-block;
+    background-color: #b94a00;
+    font-size: 1rem;
+    text-decoration: none;
 }
 p {
     margin-bottom: 1rem;
