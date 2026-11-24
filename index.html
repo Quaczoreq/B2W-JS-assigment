@@ -34,7 +34,11 @@
         </div>
         <div>
             <h3>Annotations</h3>
-            <p style="color: white;">this is where i will explain all the code and its functionality</p>
+            <p style="color: rgb(21, 48, 31);">
+                The <strong><code>Age()</code></strong> function uses <strong><code>prompt()</code></strong> to ask for the user's age.
+                An <strong><code>if...else</code></strong> statement checks whether the age is at least 18 and displays the appropriate
+                message in the element with the ID <strong><code>demo</code></strong>.
+            </p>
         </div>
         <div class="full-width-card">
             <details class="screenshot-accordion">
@@ -59,7 +63,11 @@
         </div>
         <div>
             <h3>Annotations</h3>
-            <p style="color: white;">this is where i will explain all the code and its functionality</p>
+            <p style="color: rgb(21, 48, 31);">
+                The <strong><code>hide()</code></strong> function finds the button with the ID <strong><code>hideme</code></strong>.
+                It checks <strong><code>style.display</code></strong> and switches between <strong><code>none</code></strong>
+                to hide the button and <strong><code>inline-block</code></strong> to show it again.
+            </p>
         </div>
         <div class="full-width-card">
             <details class="screenshot-accordion">
@@ -88,7 +96,12 @@
         </div>
         <div>
             <h3>Annotations</h3>
-            <p style="color: white;">this is where i will explain all the code and its functionality</p>
+            <p style="color: rgb(21, 48, 31);">
+                The <strong><code>move()</code></strong> function finds the button with the ID <strong><code>moveme</code></strong>
+                and sets its position to <strong><code>relative</code></strong>. The conditional operator
+                <strong><code>? :</code></strong> switches <strong><code>style.left</code></strong> between
+                <strong><code>100px</code></strong> and <strong><code>0px</code></strong> each time the button is clicked.
+            </p>
         </div>
         <div class="full-width-card">
             <details class="screenshot-accordion">
@@ -116,13 +129,16 @@
                     <button class="color-choice green" onclick="changeBG('lightgreen')" aria-label="Choose green">Green</button>
                     <button class="color-choice red" onclick="changeBG('lightcoral')" aria-label="Choose red">Red</button>
                     <button class="color-choice orange" onclick="changeBG('orange')" aria-label="Choose orange">Orange</button>
-                    <button style="border:2px solid black; background-color: rgb(143, 43, 43);" onclick="changeBG('white')">Reset</button>
 
 <!-- The changeBG function will be defined in the JavaScript file to change the background color after the specified time -->
         </div>
         <div>
             <h3>Annotations</h3>
-            <p style="color: white;">this is where i will explain all the code and its functionality</p>
+            <p style="color: rgb(21, 48, 31);">
+                Each colour button calls <strong><code>changeBG(color)</code></strong> with its chosen colour.
+                The function uses <strong><code>setTimeout()</code></strong> to wait 2 seconds, then sets
+                <strong><code>document.body.style.backgroundColor</code></strong> to that colour.
+            </p>
         </div>
         <div class="full-width-card">
             <details class="screenshot-accordion">
@@ -137,15 +153,23 @@
 <details class="task-accordion">
         <summary class="task-heading">
             <h2>TASK 5</h2>
-            <h3>new Date()</h3>
+            <h3>new Date() + greet user</h3>
         </summary>
     <section class="task-section">
         <div class="task-card">
-            <p>Add your task here.</p>
+            <p id="gu">please enter your name and the time of day when prompted</p>
+            <button onclick="greetUser()">Greetings</button>
+
         </div>
         <div>
             <h3>Annotations</h3>
-            <p style="color: white;">this is where i will explain all the code and its functionality</p>
+            <p style="color: rgb(21, 48, 31);"> this part of the excercise demonstrates how to greet the user based on the time of day and display the current date. </p>
+            <p style="color: rgb(21, 48, 31);">
+                The <strong><code>greetUser()</code></strong> function uses <strong><code>prompt()</code></strong> to ask for the user's name and time of day.
+                An <strong><code>if...else</code></strong> statement chooses a greeting based on the answer, or uses "Hello" if it does not match.
+                The greeting is displayed in the element with the ID <strong><code>gu</code></strong>. Then <strong><code>+=</code></strong> adds a line break and
+                <strong><code>new Date()</code></strong>, which gives the current date and time.
+            </p>
         </div>
         <div class="full-width-card">
             <details class="screenshot-accordion">
@@ -164,11 +188,22 @@
         </summary>
     <section class="task-section">
         <div class="task-card">
-            <p>Add your task here.</p>
+            <p>Please click plus to ad a number or minus to subtract a number
+                <br>
+                <button onclick="increase()">+</button>
+                <button onclick="decrease()">-</button>
+                <span id="count" style="font-family: Arial, sans-serif; font-size: 14px;">0</span>
+            </p>
+            <p> The calculator is under cunstruction : comming soon <img class="construction-icon" src="assets/images/uu-constr.png" alt="Coming soon" width="60px" height="60px"></p>
         </div>
         <div>
             <h3>Annotations</h3>
-            <p style="color: white;">this is where i will explain all the code and its functionality</p>
+            <p style="color: rgb(21, 48, 31);">
+                The variable <strong><code>counter</code></strong> starts at <strong><code>0</code></strong>.
+                The <strong><code>increase()</code></strong> function uses <strong><code>counter++</code></strong> to add one,
+                and <strong><code>decrease()</code></strong> uses <strong><code>counter--</code></strong> to subtract one.
+                Both functions update the element with the ID <strong><code>count</code></strong> to display the new value.
+            </p>
         </div>
         <div class="full-width-card">
             <details class="screenshot-accordion">

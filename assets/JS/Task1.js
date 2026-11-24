@@ -26,12 +26,39 @@ function move() {
 function changeBG(color) {
     setTimeout(function() {
         document.body.style.backgroundColor = color;
-    }, 3000); 
-
+    }, 2000);
 }
 
 function setBulb(isOn) {
     let bulb = document.getElementById("lightbulb");
     bulb.src = isOn ? "assets/images/on.png" : "assets/images/off.png";
     bulb.alt = isOn ? "Lightbulb on" : "Lightbulb off";
+}
+
+function greetUser() {
+    let name = prompt("What is your name?");
+    let day = prompt("Please enter if it is morning, afternoon or evening");
+
+    if(day==="morning") {
+        document.getElementById("gu").innerHTML = "Good morning, " + name + "!";
+    } else if(day==="afternoon") {
+        document.getElementById("gu").innerHTML = "Good afternoon, " + name + "!";
+    } else if(day==="evening") {
+        document.getElementById("gu").innerHTML = "Good evening, " + name + "!";
+    } else {
+        document.getElementById("gu").innerHTML = "Hello, " + name + "!";
+    }
+    document.getElementById("gu").innerHTML += "<br></br>" + " Today is " + new Date();
+}
+
+// COUNTER FUNCTIONS
+let counter = 0;
+function increase() {
+    counter++;
+    document.getElementById("count").innerHTML = counter;
+}
+
+function decrease() {
+    counter--;
+    document.getElementById("count").innerHTML = counter;
 }

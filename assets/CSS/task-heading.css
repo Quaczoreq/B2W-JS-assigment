@@ -59,4 +59,17 @@
     width: 160px;
     max-width: 100%;
     height: auto;
+    border-radius: 12px;
 }
+
+.construction-icon {
+    animation: spin 3s linear infinite;
+}
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
