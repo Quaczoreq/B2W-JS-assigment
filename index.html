@@ -229,6 +229,17 @@
                 and <strong><code>decrease()</code></strong> uses <strong><code>counter--</code></strong> to subtract one.
                 Both functions update the element with the ID <strong><code>count</code></strong> to display the new value.
             </p>
+            <p style="color: rgb(21, 48, 31); margin-top: 3lh;">
+                Each calculator button calls <strong><code>calculate(operator)</code></strong> with
+                <strong><code>+</code></strong>, <strong><code>-</code></strong>, <strong><code>*</code></strong>
+                or <strong><code>/</code></strong>. The function reads both inputs using
+                <strong><code>.value</code></strong> and checks that neither is empty.
+                <strong><code>Number()</code></strong> converts the input text into numbers, and
+                <strong><code>if...else</code></strong> chooses the calculation.
+                The function displays an error if the user tries to divide by zero.
+                Otherwise, <strong><code>textContent</code></strong> displays the answer in the element
+                with the ID <strong><code>result</code></strong>.
+            </p>
         </div>
         <div class="full-width-card">
             <details class="screenshot-accordion">

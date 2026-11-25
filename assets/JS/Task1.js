@@ -111,11 +111,6 @@ function calculate(operator) {
         return;
     }
 
-    if (!Number.isFinite(answer)) {
-        output.textContent = "Please use valid, smaller numbers.";
-        return;
-    }
-
     output.textContent = "Result: " + answer;
 }
 
