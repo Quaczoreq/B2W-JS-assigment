@@ -62,6 +62,10 @@ function decrease() {
 }
 
 // TASK 7 LIGHTBULB FUNCTION 
+function welcome() {
+    alert("welcome");
+}
+
 function Bulbon() {
     let on = document.getElementById("lightbulb");
     on.src = "assets/images/onn.png";

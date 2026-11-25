@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="assets/CSS/task-heading.css">
     <link rel="stylesheet" href="assets/CSS/screenshot-accordion.css">
 </head>
-<body>
+<body onload="welcome()">
 <header class="site-header">
     <a href="https://backtoworkuk.com/" target="_blank" rel="noopener noreferrer"><img src="assets/images/b2wlogo.JPG" alt="Back to Work" ></a>
 </header>
@@ -270,6 +270,9 @@
         <div>
             <h3>Annotations</h3>
             <p style="color: rgb(21, 48, 31);">
+                The <strong><code>onload</code></strong> event in the <strong><code>&lt;body&gt;</code></strong>
+                tag calls <strong><code>welcome()</code></strong> when the page finishes loading.
+                This function uses <strong><code>alert()</code></strong> to display the message "welcome".
                 The image starts with <strong><code>off.png</code></strong>, so the bulb is off when the page loads.
                 The <strong><code>onmouseover</code></strong> event calls <strong><code>Bulbon()</code></strong>
                 when the mouse moves over the image. This function uses <strong><code>document.getElementById("lightbulb")</code></strong>
@@ -286,7 +289,18 @@
                 <summary>Screenshot of the code</summary>
                     <img class="code-screenshot" src="assets/images/t7html.JPG" alt="Task 7 HTML code screenshot">
                     <img class="code-screenshot" src="assets/images/t7js.JPG" alt="Task 7 JavaScript code screenshot">
-               
+                <div>
+                    <h3>onload function</h3>
+                    <p style="color: rgb(21, 48, 31);">
+                        The <strong><code>onload="welcome()"</code></strong> attribute in the
+                        <strong><code>&lt;body&gt;</code></strong> tag calls the JavaScript function
+                        <strong><code>welcome()</code></strong> when the page and its resources finish loading.
+                        Inside the function, <strong><code>alert("welcome")</code></strong> opens a message box
+                        displaying "welcome". The user closes the message box by clicking OK.
+                    </p>
+                </div>
+                <img class="code-screenshot" src="assets/images/olh.JPG" alt="Body onload event calling welcome in HTML">
+                <img class="code-screenshot" src="assets/images/ols.JPG" alt="JavaScript welcome function displaying an alert">
             </details>
         </div>
     </section>
