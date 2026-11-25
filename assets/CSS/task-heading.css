@@ -64,11 +64,17 @@
 
 .construction-icon {
     animation: spin 3s linear infinite;
+    scale: 1;
+    transition: scale 0.5s ease;
 }
 @keyframes spin {
     to {
         transform: rotate(360deg);
     }
+}
+.construction-icon:hover {
+    animation-duration: 0.5s;
+    scale: 1.2;
 }
 
 

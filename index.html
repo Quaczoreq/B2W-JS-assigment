@@ -198,9 +198,28 @@
                 <br>
                 <button onclick="increase()">+</button>
                 <button onclick="decrease()">-</button>
-                <span id="count" style="font-family: Arial, sans-serif; font-size: 14px;">0</span>
+                <p style="font-weight: bold; border: 3px solid black; border-radius: 10px; padding: 10px;" size="16px"><span id="count" style="font-family: Arial, sans-serif; font-size: 14px;">0</span></p>
             </p>
-            <p> The calculator is under cunstruction : comming soon <img class="construction-icon" src="assets/images/uu-constr.png" alt="Coming soon" width="60px" height="60px"></p>
+            <p><img class="construction-icon" src="assets/images/uu-constr.png" alt="Coming soon" width="60px" height="60px">         
+
+<!-- the calculator in progress -->
+            <br><p style="font-weight: bold;" size="14px">  Please provide first number </p>
+                    <label>
+                        <input id="number1" type="number" min="0" max="9999" step="1">
+                    </label><br>
+                <p style="font-weight: bold;" size="14px">  Please provide the second number </p>   
+                    <label>
+                        <input id="number2" type="number" min="0" max="9999" step="1">
+                    </label><br>
+                <p style="font-weight: bold;" size="14px">  Please provide the operation </p>
+                    <button onclick="calculate('+')">+</button>
+                    <button onclick="calculate('-')">-</button>
+                    <button onclick="calculate('*')">x</button>
+                    <button onclick="calculate('/')">/</button><br>
+                <p  style="font-weight: bold;" size="14px">  Result will be displayed here: </p><br>
+                <p id="result" style="font-weight: bold; border: 3px solid black; border-radius: 10px; padding: 10px;" size="16px"></p><br>
+
+        
         </div>
         <div>
             <h3>Annotations</h3>
@@ -229,10 +248,10 @@
         </summary>
     <section class="task-section">
         <div class="task-card">
-            <p>Move your mouse over the bulb to turn it on and move away to turn it off.</p>
+            <p><strong style="font-size: 1.2em;">Move your mouse over the</strong> bulb to turn it on and move away to turn it off.<br><br><strong style="font-size: 1.2em;">Click the bulb to make it bigger.</strong> It gets bigger only to 300px then it is back to 150px.</p>
             <img id="lightbulb" class="bulb-image" src="assets/images/off.png" alt="Lightbulb off"
-                 onmouseover="Bulbon()" onmouseout="Bulboff()" onclick="Big()">
-
+                 onmouseover="Bulbon()" onmouseout="Bulboff()" onclick="Big()"
+>
         </div>
         <div>
             <h3>Annotations</h3>

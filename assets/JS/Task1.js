@@ -78,6 +78,47 @@ function Big() {
     }
 }
 
+//Task 6 calculator function
+
+function calculate(operator) {
+    let first = document.getElementById("number1").value;
+    let second = document.getElementById("number2").value;
+    let output = document.getElementById("result");
+
+    if (first === "" || second === "") {
+        output.textContent = "Please enter both numbers.";
+        return;
+    }
+
+    let a = Number(first);
+    let b = Number(second);
+    let answer;
+
+    if (operator === "+") {
+        answer = a + b;
+    } else if (operator === "-") {
+        answer = a - b;
+    } else if (operator === "*") {
+        answer = a * b;
+    } else if (operator === "/") {
+        if (b === 0) {
+            output.textContent = "Cannot divide by zero.";
+            return;
+        }
+        answer = a / b;
+    } else {
+        output.textContent = "Unknown operation.";
+        return;
+    }
+
+    if (!Number.isFinite(answer)) {
+        output.textContent = "Please use valid, smaller numbers.";
+        return;
+    }
+
+    output.textContent = "Result: " + answer;
+}
+
 // BLOCK BROWSER Function to prevent right-click, copy, cut, select, and certain key combinations
 (function () {
     function blockBrowserAction(event) {
