@@ -11,6 +11,12 @@ body {
     font-family: Arial, sans-serif;
 }
 
+body,
+body * {
+    -webkit-user-select: none;
+    user-select: none;
+}
+
 .page-content {
     box-sizing: border-box;
     width: calc(100% - 4rem);
@@ -42,13 +48,15 @@ border-color: rgb(39, 51, 45);
 
 .task-section > div {
     margin-bottom: 0;
+    overflow-wrap: anywhere;
 }
 
 .full-width-card {
     grid-column: 1 / -1;
 }
 
-.site-header {
+.site-header,
+.site-footer {
     padding: 1rem;
     background-color: #0d302a;
     text-align: center;
@@ -60,6 +68,31 @@ border-color: rgb(39, 51, 45);
     height: auto;
     margin: 0 auto;
     opacity: 0.8;
+}
+
+.site-footer {
+    color: #ffffc4;
+}
+
+.site-footer p {
+    margin: 0 0 0.75rem;
+    font-size: 0.9rem;
+}
+
+.linkedin-icon {
+    display: inline-block;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    background-color: #0a66c2;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.linkedin-icon:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 3px;
 }
 
 .course-banner {

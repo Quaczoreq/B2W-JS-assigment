@@ -21,7 +21,8 @@
     </div> 
 
 <!-- TASK 1 section Confirm BOX -->
-<details class="task-accordion">
+ 
+<details class="task-accordion" name="tasks">
         <summary class="task-heading">
             <h2>TASK 1</h2>
             <h3>Confirm BOX</h3>
@@ -43,14 +44,15 @@
         <div class="full-width-card">
             <details class="screenshot-accordion">
                 <summary>Screenshot of the code</summary>
-                <p>Add a screenshot of the code here.</p>
+                <img class="code-screenshot" src="assets/images/t1html.JPG" alt="Task 1 HTML code screenshot">
+                <img class="code-screenshot" src="assets/images/t1js.JPG" alt="Task 1 JavaScript code screenshot">
             </details>
         </div>
     </section>
 </details>
 
 <!-- TASK 2 section Hide/show/hide button  -->
-<details class="task-accordion">
+<details class="task-accordion" name="tasks">
         <summary class="task-heading">
             <h2>TASK 2</h2>
             <h3>Hide /show / hide</h3>
@@ -72,14 +74,15 @@
         <div class="full-width-card">
             <details class="screenshot-accordion">
                 <summary>Screenshot of the code</summary>
-                <p>Add a screenshot of the code here.</p>
+                <img class="code-screenshot" src="assets/images/t2html.JPG" alt="Task 2 HTML code screenshot">
+                <img class="code-screenshot" src="assets/images/t2js.JPG" alt="Task 2 JavaScript code screenshot">
             </details>
         </div>
     </section>
 </details>
 
 <!-- TASK 3 section Move button -->
-<details class="task-accordion">
+<details class="task-accordion" name="tasks">
         <summary class="task-heading">
             <h2>TASK 3</h2>
             <h3>Move button</h3>
@@ -106,14 +109,15 @@
         <div class="full-width-card">
             <details class="screenshot-accordion">
                 <summary>Screenshot of the code</summary>
-                <p>Add a screenshot of the code here.</p>
+                <img class="code-screenshot" src="assets/images/t3html.JPG" alt="Task 3 HTML code screenshot">
+                <img class="code-screenshot" src="assets/images/t3js.JPG" alt="Task 3 JavaScript code screenshot">
             </details>
         </div>
     </section>
 </details>
 
 <!-- TASK 4 section Hide/show/hide button  -->
-<details class="task-accordion">
+<details class="task-accordion" name="tasks">
         <summary class="task-heading">
             <h2>TASK 4</h2>
             <h3>Change background color in 3 seconds</h3>
@@ -143,14 +147,15 @@
         <div class="full-width-card">
             <details class="screenshot-accordion">
                 <summary>Screenshot of the code</summary>
-                <p>Add a screenshot of the code here.</p>
+                <img class="code-screenshot" src="assets/images/t4html.JPG" alt="Task 4 HTML code screenshot">
+                <img class="code-screenshot" src="assets/images/t4js.JPG" alt="Task 4 JavaScript code screenshot">
             </details>
         </div>
     </section>
 </details>
 
 <!-- TASK 5 section Date -->
-<details class="task-accordion">
+<details class="task-accordion" name="tasks">
         <summary class="task-heading">
             <h2>TASK 5</h2>
             <h3>new Date() + greet user</h3>
@@ -174,14 +179,15 @@
         <div class="full-width-card">
             <details class="screenshot-accordion">
                 <summary>Screenshot of the code</summary>
-                <p>Add a screenshot of the code here.</p>
+                <img class="code-screenshot" src="assets/images/t5html.JPG" alt="Task 5 HTML code screenshot">
+                <img class="code-screenshot" src="assets/images/t5JS.JPG" alt="Task 5 JavaScript code screenshot">
             </details>
         </div>
     </section>
 </details>
 
 <!-- TASK 6 section Counter and calculator -->
-<details class="task-accordion">
+<details class="task-accordion" name="tasks">
         <summary class="task-heading">
             <h2>TASK 6</h2>
             <h3>Counter / calculator</h3>
@@ -208,39 +214,56 @@
         <div class="full-width-card">
             <details class="screenshot-accordion">
                 <summary>Screenshot of the code</summary>
-                <p>Add a screenshot of the code here.</p>
+                <img class="code-screenshot" src="assets/images/t6html.JPG" alt="Task 6 HTML code screenshot">
+                <img class="code-screenshot" src="assets/images/t6js.JPG" alt="Task 6 JavaScript code screenshot">
             </details>
         </div>
     </section>
 </details>
 
 <!-- TASK 7 section Lightbulb -->
-<details class="task-accordion">
+<details class="task-accordion" name="tasks">
         <summary class="task-heading">
             <h2>TASK 7</h2>
             <h3>The lightbulb: onload(), onmouseover(), onmouseout()</h3>
         </summary>
     <section class="task-section">
         <div class="task-card">
-            <p>Move your mouse over the bulb or focus it with Tab to turn it on. Move away or change focus to turn it off.</p>
+            <p>Move your mouse over the bulb to turn it on and move away to turn it off.</p>
             <img id="lightbulb" class="bulb-image" src="assets/images/off.png" alt="Lightbulb off"
-                 tabindex="0" onmouseover="setBulb(true)" onmouseout="setBulb(false)"
-                 onfocus="setBulb(true)" onblur="setBulb(false)">
+                 onmouseover="Bulbon()" onmouseout="Bulboff()" onclick="Big()">
+
         </div>
         <div>
             <h3>Annotations</h3>
-            <p style="color: white;">this is where i will explain all the code and its functionality</p>
+            <p style="color: rgb(21, 48, 31);">
+                The image starts with <strong><code>off.png</code></strong>, so the bulb is off when the page loads.
+                The <strong><code>onmouseover</code></strong> event calls <strong><code>Bulbon()</code></strong>
+                when the mouse moves over the image. This function uses <strong><code>document.getElementById("lightbulb")</code></strong>
+                to find the image and changes its <strong><code>src</code></strong> to <strong><code>onn.png</code></strong>.
+                The <strong><code>onmouseout</code></strong> event calls <strong><code>Bulboff()</code></strong>
+                when the mouse leaves, changing the image back to <strong><code>off.png</code></strong>.
+                Clicking the image calls <strong><code>Big()</code></strong>, which increases its width by
+                <strong>15 pixels</strong> each time. When its width becomes greater than
+                <strong>300 pixels</strong>, it resets to <strong>150 pixels</strong>.
+            </p>
         </div>
         <div class="full-width-card">
             <details class="screenshot-accordion">
                 <summary>Screenshot of the code</summary>
-                <p>Add a screenshot of the code here.</p>
+                <img class="code-screenshot" src="assets/images/t7html.JPG" alt="Task 7 HTML code screenshot">
+                <img class="code-screenshot" src="assets/images/t7js.JPG" alt="Task 7 JavaScript code screenshot">
             </details>
         </div>
     </section>
 </details>
 
 </main>
+<footer class="site-footer">
+    <p>&copy; All rights reserved.</p>
+    <p>Content on this page is strictly for learning purposes, as this is an assignment for the course requirements.</p>
+    <a class="linkedin-icon" href="https://www.linkedin.com/in/katarzyna-opozda" target="_blank" rel="noopener noreferrer" aria-label="Katarzyna Opozda on LinkedIn (opens in a new tab)">in</a>
+</footer>
 
 <script src="assets/JS/Task1.js"></script>
 </body>

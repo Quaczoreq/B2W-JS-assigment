@@ -10,6 +10,21 @@
 }
 
 .screenshot-accordion img {
+    display: block;
     max-width: 100%;
     height: auto;
+    margin: 1rem auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.code-screenshot {
+    position: relative;
+    transition: transform 0.2s ease;
+}
+
+.code-screenshot:hover {
+    z-index: 1;
+    transform: scale(1.05);
 }

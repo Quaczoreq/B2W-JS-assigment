@@ -1,4 +1,4 @@
-// AGE CONFIRM FUNCTION
+// TASK 1 AGE CONFIRM FUNCTION
 function Age() {
     let age = prompt("What is your age?");
     if (age>=18) {
@@ -7,6 +7,7 @@ function Age() {
         document.getElementById("demo").innerHTML = "You are Not an adult: you can not go to the concert";
     }
 }
+
 // HIDE BUTTON FUNCTION
 function hide() {
     let button = document.getElementById("hideme");
@@ -16,25 +17,22 @@ function hide() {
         button.style.display = "none";
     }
 }
-// MOVING BUTTON FUNCTION
+
+// TASK 3 MOVING BUTTON FUNCTION
 function move() {
     let button = document.getElementById("moveme");
         button.style.position = "relative";
         button.style.left = button.style.left === "100px" ? "0px" : "100px";
 }
-// CHANGE BACKGROUND COLOR FUNCTION
+
+// TASK 4 CHANGE BACKGROUND COLOR FUNCTION
 function changeBG(color) {
     setTimeout(function() {
         document.body.style.backgroundColor = color;
     }, 2000);
-}
 
-function setBulb(isOn) {
-    let bulb = document.getElementById("lightbulb");
-    bulb.src = isOn ? "assets/images/on.png" : "assets/images/off.png";
-    bulb.alt = isOn ? "Lightbulb on" : "Lightbulb off";
 }
-
+// TASK 5 GREET USER FUNCTION
 function greetUser() {
     let name = prompt("What is your name?");
     let day = prompt("Please enter if it is morning, afternoon or evening");
@@ -51,7 +49,7 @@ function greetUser() {
     document.getElementById("gu").innerHTML += "<br></br>" + " Today is " + new Date();
 }
 
-// COUNTER FUNCTIONS
+// TASK 6 COUNTER FUNCTIONS
 let counter = 0;
 function increase() {
     counter++;
@@ -62,3 +60,47 @@ function decrease() {
     counter--;
     document.getElementById("count").innerHTML = counter;
 }
+
+// TASK 7 LIGHTBULB FUNCTION 
+function Bulbon() {
+    let on = document.getElementById("lightbulb");
+    on.src = "assets/images/onn.png";
+}
+function Bulboff() {
+    let off = document.getElementById("lightbulb");
+    off.src = "assets/images/off.png";
+}
+function Big() {
+    let bulb = document.getElementById("lightbulb");
+    bulb.style.width = bulb.offsetWidth + 15 + "px";
+    if (bulb.offsetWidth > 300) {
+        bulb.style.width = "150px";
+    }
+}
+
+// BLOCK BROWSER Function to prevent right-click, copy, cut, select, and certain key combinations
+(function () {
+    function blockBrowserAction(event) {
+        event.preventDefault();
+    }
+
+    document.addEventListener("contextmenu", blockBrowserAction);
+    document.addEventListener("copy", blockBrowserAction);
+    document.addEventListener("cut", blockBrowserAction);
+    document.addEventListener("selectstart", blockBrowserAction);
+
+    document.addEventListener("keydown", function (event) {
+        const key = event.key.toLowerCase();
+        const modifier = event.ctrlKey || event.metaKey;
+        const blockedShortcuts = ["a", "c", "p", "s", "u", "x"];
+        const developerToolsShortcuts = ["c", "i", "j"];
+
+        if (
+            event.key === "F12" ||
+            (modifier && blockedShortcuts.includes(key)) ||
+            (modifier && event.shiftKey && developerToolsShortcuts.includes(key))
+        ) {
+            event.preventDefault();
+        }
+    });
+})();
